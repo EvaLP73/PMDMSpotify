@@ -48,12 +48,12 @@ fun ImageTextSquare (
                 contentScale = ContentScale.Crop
 
             )
-            Text(
+            /*Text(
                 text = buildAnnotatedString {
                     append("$txtMsg")
                 },
                 modifier = Modifier.padding(6.dp), color = Color.White, fontWeight = FontWeight.Bold
-            )
+            )*/
 
 
         }
@@ -61,7 +61,7 @@ fun ImageTextSquare (
             modifier = Modifier
                 .width(width = 150.dp)
                 .height(height = 50.dp)
-                .background(Color.LightGray)
+                .background(Color.Transparent)
                 .clickable { action.invoke() },
         ) {
 

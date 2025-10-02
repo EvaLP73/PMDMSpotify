@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.spotify.pages.SelectorPage
 import com.example.spotify.ui.theme.SpotifyTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,15 +20,13 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SpotifyTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+
+                    SelectorPage()
+
             }
         }
     }
+
 }
 
 @Composable
