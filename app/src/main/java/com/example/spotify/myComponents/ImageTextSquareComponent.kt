@@ -63,6 +63,7 @@ fun ImageTextSquare (
                 .background(Color.LightGray)
                 .clickable { action.invoke() },
         ) {
+            
             Text(
                 text = buildAnnotatedString {
                     append("$txtMsg2")
