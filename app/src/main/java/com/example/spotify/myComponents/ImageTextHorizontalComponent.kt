@@ -1,6 +1,7 @@
 package com.example.spotify.myComponents
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
@@ -28,6 +29,7 @@ fun ImageTextHorizontal (
         modifier = Modifier
             .width(width = 150.dp)
             .height(height = 50.dp)
+            .background(Color.LightGray)
             .clickable{ action.invoke() },
     ){
         Image(painterResource(imageIdR), contentDescription = "")
