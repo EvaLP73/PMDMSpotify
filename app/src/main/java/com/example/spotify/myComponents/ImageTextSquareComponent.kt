@@ -20,6 +20,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.spotify.R
@@ -63,19 +64,22 @@ fun ImageTextSquare (
                 .background(Color.LightGray)
                 .clickable { action.invoke() },
         ) {
-            
+
             Text(
                 text = buildAnnotatedString {
-                    append("$txtMsg2")
+                    append("$txtMsg")
+
                 },
                 modifier = Modifier.padding(6.dp), color = Color.White, fontWeight = FontWeight.Bold
             )
             Text(
                 text = buildAnnotatedString {
-                    append("$txtMsg")
+                    append("\n")
+                    append( "$txtMsg2")
                 },
                 modifier = Modifier.padding(6.dp), color = Color.White
             )
+
 
         }
     }
